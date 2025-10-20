@@ -5,6 +5,10 @@ import cam1 from "../assets/cm1.jpg";
 import cam2 from "../assets/cm2.jpg";
 import cam3 from "../assets/cm3.png";
 import cam4 from "../assets/cm4.png";
+import product1 from "../assets/product1.png"
+import product2 from "../assets/product2.png"
+import product3 from "../assets/product3.png"
+import product4 from "../assets/product4.png"
 
 
 
@@ -58,3 +62,26 @@ export const CAMERAFEATURESDATA = [
 
     },
 ]
+
+export const ALLCAMERAS = [
+    {
+        image:product1,
+        productname:"360 Camera",
+        speciality: "Cover every angles",
+    },
+    {
+        image:product2,
+        productname:"Night Vision",
+        speciality: "Tailored for Night Security",
+    },
+    {
+        image:product3,
+        productname:"Single Cam",
+        speciality: "It's all about the little things that matter!",
+    },
+    {
+        image:product4,
+        productname:"Web Cam",
+        speciality: "Perfect for your laptops and desktops!",
+    },
+] 

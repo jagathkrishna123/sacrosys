@@ -94,7 +94,7 @@ import Arrowright from "../assets/arrowright.svg";
 import Banner from "./Banner.jsx";
 const Futures = () => {
   return (
-    <div className="w-full bg-[#0b0b0b] pt-16">
+    <div className="w-full  pt-16">
       {/* Main Container */}
       <div className="max-w-6xl w-full mx-auto px-6">
         {/* Section Heading */}
@@ -102,8 +102,9 @@ const Futures = () => {
           className="
             font-radio 
             bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] 
-            bg-clip-text text-transparent 
-            text-[40px] 
+            bg-clip-text text-transparent
+            text-[26px]
+            md:text-[40px] 
             font-normal 
             leading-none 
             tracking-normal 
@@ -122,7 +123,7 @@ const Futures = () => {
             >
               <img src={item.image} alt={item.title} className="w-14 mb-3" />
               <div>
-                <p className="text-white text-lg font-medium">{item.title}</p>
+                <p className="text-white text-[15px] md:text-lg font-medium">{item.title}</p>
                 <p className="text-[#676767] text-sm mt-1">{item.subtitle}</p>
                 <button className="mt-3 bg-[#00AAB5] text-[11px] text-white px-3 py-1 rounded-full hover:bg-[#00c2d5] transition">
                   Know more
@@ -153,16 +154,16 @@ const Futures = () => {
               {/* Content */}
               <div className="flex flex-col gap-4 text-center md:text-left max-w-lg">
                 <h2
-                  className="text-[32px] text-center font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]
+                  className="text-[26px] md:text-[32px] text-center font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]
                   bg-clip-text text-transparent"
                 >
                   {item.title}
                 </h2>
-                <h3 className="text-lg font-medium text-gray-200 font-radio text-[24px]">
+                <h3 className="text-[16px] md:text-lg font-medium text-gray-200 font-radio ">
                   {item.feature}
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-[16px] font-pop">{item.subtitle}</p>
-                <hr class="h-[2px] border-0 bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]" />
+                <hr className="h-[2px] border-0 bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]" />
 
                 <div className="flex justify-center">
                   <img src={star} alt="rating" className="w-[90px]" />
@@ -191,7 +192,7 @@ const Futures = () => {
           ))}
         </div>
       </div>
-      <Banner/>
+      {/* <Banner/> */}
     </div>
   );
 };
