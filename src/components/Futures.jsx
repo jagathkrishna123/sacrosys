@@ -123,8 +123,8 @@ const Futures = () => {
             >
               <img src={item.image} alt={item.title} className="w-14 mb-3" />
               <div>
-                <p className="text-white text-[15px] md:text-lg font-medium">{item.title}</p>
-                <p className="text-[#676767] text-sm mt-1">{item.subtitle}</p>
+                <p className="text-white text-[16px] md:text-[20px] md:text-lg font-pop">{item.title}</p>
+                <p className="text-[#676767] font-normal text-[14px] md:text-[16px] mt-1">{item.subtitle}</p>
                 <button className="mt-3 bg-[#00AAB5] text-[11px] text-white px-3 py-1 rounded-full hover:bg-[#00c2d5] transition">
                   Know more
                 </button>
@@ -170,7 +170,7 @@ const Futures = () => {
                 </div>
                   <div className="flex justify-center">
   <button
-    className="relative px-10 py-2 mt-2 rounded-full text-cyan-300 transition duration-300 max-w-fit border-2 border-transparent flex items-center justify-center gap-4"
+    className="relative px-10 py-2 mt-2 rounded-full text-cyan-300 font-radio transition duration-300 max-w-fit border-2 border-transparent flex items-center justify-center gap-4"
     style={{
       background: `
         linear-gradient(#0b0b0b, #0b0b0b) padding-box,

@@ -76,7 +76,7 @@ const Banner = () => {
 
         {/* Text & Input Section */}
         <div className="flex flex-col justify-center items-center md:items-start w-full md:w-2/3 p-4 md:p-8 text-white space-y-4">
-          <h2 className="text-lg sm:text-xl md:text-[24px] font-normal font-radio leading-snug text-center md:text-left">
+          <h2 className="text-lg sm:text-xl md:text-[24px] font-normal font-radio leading-snug text-center md:text-left font-radio">
             Enhance Your Organization's Security <br /> 
             <span className="font-normal">Extra Eye</span>
           </h2>
@@ -85,7 +85,7 @@ const Banner = () => {
             <input
               type="tel"
               placeholder="Contact Number"
-              className="flex-grow px-4 py-2 text-md text-white placeholder-white/70 rounded-full outline-none transition duration-300"
+              className="flex-grow px-4 py-2 text-md text-white placeholder-white/70 rounded-full outline-none transition duration-300 font-mont"
               style={{ 
                 backgroundColor: 'rgba(255, 255, 255, 0.15)',
                 border: '1px solid rgba(255, 255, 255, 0.3)'

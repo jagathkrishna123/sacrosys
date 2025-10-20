@@ -40,11 +40,11 @@ const ProductList = () => {
               <p className="text-[12px] text-[#667085] font-pop text-start">
                 {item.speciality}
               </p>
-              <p className="text-[12px] font-bold text-[#667085] text-end">
+              <p className="text-[12px] font-bold text-[#667085] text-end font-radio">
                 More details
               </p>
               <div className="flex flex-row justify-between items-center">
-  <button className="w-[120px] h-[28px] md:w-[148px] md:h-[32px] bg-[#00AAB5] text-[14px] md:text-[16px] text-white rounded-full hover:bg-[#00c2d5] transition flex items-center justify-center">
+  <button className="w-[120px] h-[28px] md:w-[148px] md:h-[32px] bg-[#00AAB5] text-[14px] font-radio md:text-[16px] text-white rounded-full hover:bg-[#00c2d5] transition flex items-center justify-center">
     Buy
   </button>
   <img src={carticon} alt="" className="w-[24px] h-[24px] md:w-[30px] md:h-[30px]" />
