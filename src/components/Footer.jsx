@@ -26,11 +26,11 @@ const Footer = () => {
                 <div className="flex flex-wrap justify-between gap-10">
                     {linkSections.map((section, index) => (
                         <div key={index} className="flex-1 min-w-[150px]">
-                            <h3 className="font-semibold text-base text-gray-300 mb-4">{section.title}</h3>
-                            <ul className="text-sm space-y-1">
+                            <h3 className="font-normal text-base font-pop text-gray-300 mb-4">{section.title}</h3>
+                            <ul className="text-sm space-y-2">
                                 {section.links.map((link, i) => (
                                     <li key={i}>
-                                        <a href="#" className="hover:underline transition">{link}</a>
+                                        <a href="#" className="hover:underline transition text-[14px] font-rale text-[#9C9C9C]">{link}</a>
                                     </li>
                                 ))}
                             </ul>
@@ -38,7 +38,7 @@ const Footer = () => {
                     ))}
                 </div>
             </div>
-            <p className="text-center text-sm md:text-base text-gray-500/80 mt-6">
+            <p className="text-center font-pop text-sm md:text-[15px] text-gray-500/80 mt-6 mb-9">
                 Copyright © 2025-26 Sacrosys Technologies | All Rights Reserved.
             </p>
         </div>

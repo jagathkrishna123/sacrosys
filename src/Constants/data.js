@@ -43,22 +43,22 @@ export const CAMERAFEATURESDATA = [
     {
         image:cam2,
         title:"Best Quality Ever",
-        feature: "Spread the View",
-        subtitle:"Discover the amazing world of 360 cameras! These cool devices boost your creativity and help you save money. With two camera views, you can capture every angle and detail, making it easy to share breath-taking panoramic moments."
+        feature: "Life Long",
+        subtitle:"We consistently offer the best quality cameras available on the market. Our products are designed to minimize maintenance time, and we guarantee quick service whenever you need it."
 
     },
     {
         image:cam3,
         title:"Top Tech Trends",
-        feature: "Spread the View",
-        subtitle:"Discover the amazing world of 360 cameras! These cool devices boost your creativity and help you save money. With two camera views, you can capture every angle and detail, making it easy to share breath-taking panoramic moments."
+        feature: "Innovative Designs",
+        subtitle:"Stay ahead of the curve with our top tech trends in camera technology. Our innovative designs combine style and function, ensuring you always capture the perfect shot with ease."
 
     },
     {
         image:cam4,
         title:"New Features Galore",
-        feature: "Spread the View",
-        subtitle:"Discover the amazing world of 360 cameras! These cool devices boost your creativity and help you save money. With two camera views, you can capture every angle and detail, making it easy to share breath-taking panoramic moments."
+        feature: "Enhanced Performance",
+        subtitle:"Experience our latest camera model with a plethora of new features that will elevate your photography game. Enjoy enhanced performance and unlock a world of creative possibilities at your fingertips."
 
     },
 ]

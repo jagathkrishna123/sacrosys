@@ -159,7 +159,7 @@ const Futures = () => {
                 >
                   {item.title}
                 </h2>
-                <h3 className="text-[16px] md:text-lg font-medium text-gray-200 font-radio ">
+                {/* <h3 className="text-[16px] md:text-lg font-medium text-gray-200 font-radio">
                   {item.feature}
                 </h3>
              <p
@@ -177,7 +177,28 @@ const Futures = () => {
   "
 >
   {item.subtitle}
-</p>
+</p> */}
+<div
+  className="
+    w-full
+    text-gray-300
+    font-pop
+    rounded-xl
+    p-6 md:p-8
+    break-words
+    whitespace-normal
+  "
+>
+  {/* Feature first */}
+  <div className="text-[#08F7C3] font-normal font-radio text-[16px] md:text-[24px] mb-3">
+    {item.feature}
+  </div>
+
+  {/* Subtitle below */}
+  <div className="text-[16px] md:text-[17px] leading-relaxed font-pop text-gray-300">
+    {item.subtitle}
+  </div>
+</div>
 
 
 
@@ -192,7 +213,7 @@ const Futures = () => {
     className="relative px-10 py-2 mt-2 rounded-full text-cyan-300 font-radio transition duration-300 max-w-fit border-2 border-transparent flex items-center justify-center gap-4"
     style={{
       background: `
-        linear-gradient(#0b0b0b, #0b0b0b) padding-box,
+        linear-gradient(#120E23) padding-box,
         linear-gradient(to right, #FF2DF7, #5200FF, #00F0FF) border-box
       `,
     }}

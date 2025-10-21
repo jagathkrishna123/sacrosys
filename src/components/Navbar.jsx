@@ -22,41 +22,14 @@ useEffect(() => {
   return (
     <>
       {/* Navbar Container */}
-      <div className="fixed top-6 left-1/2 -translate-x-1/2 flex flex-row items-center justify-between max-w-6xl w-full z-50 px-4 sm:px-6">
+      {/* <div className="fixed top-6 left-1/2 -translate-x-1/2 flex flex-row items-center justify-between max-w-6xl w-full z-50 px-4 sm:px-0"> */}
+      <div className="fixed top-6 left-0 right-0 flex flex-row items-center justify-between max-w-7xl mx-auto w-full z-50 px-4 sm:px-0">
+
         {/* Logo */}
-        <a href="https://prebuiltui.com">
+        <a href="">
           <LogoTitle />
         </a>
 
-        {/* Hamburger Button (Mobile) */}
-        {/* <button
-          className="md:hidden flex items-center text-white z-[60]"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <svg
-            className="w-7 h-7"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button> */}
         <button
   className={`md:hidden flex items-center text-white z-[60] transition-all duration-500
     ${scrolled ? 'backdrop-blur-md bg-white/20 px-4 py-2 rounded-lg' : ''}`}
@@ -79,7 +52,7 @@ useEffect(() => {
 
 
         {/* Desktop Navbar */}
-        <header className="hidden md:flex items-center justify-between px-6 py-3 shadow max-w-5xl rounded-lg backdrop-blur-md bg-white/20 w-fit gap-4">
+        <header className="hidden md:flex items-center justify-between px-6 py-3 shadow max-w-6xl  rounded-lg backdrop-blur-md bg-white/20 w-fit gap-4">
           <nav className="flex flex-row gap-8 text-white text-sm font-normal font-pop text-[16px]">
             <a className="hover:text-gray-100 transition transform duration-500" href="#">
               Products

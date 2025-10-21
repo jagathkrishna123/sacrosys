@@ -13,8 +13,8 @@ const Header = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-      {/* Content */}
-      <div className="max-w-6xl relative z-10 w-full p-4 sm:p-6 md:p-8">
+      {/* Content note change padding++++++++++++++++++ */}
+      <div className="max-w-7xl relative z-10 w-full p-4 sm:p-6 md:p-0"> 
         <div className="max-w-2xl font-bold text-[28px] sm:text-[32px] md:text-[40px] font-pop flex flex-col gap-4 md:gap-2 leading-tight sm:leading-snug">
           
           {/* Headings */}

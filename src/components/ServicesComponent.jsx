@@ -180,14 +180,14 @@ const ServiceItem = ({ service, isActive, onClick }) => {
                 {/* Image Placeholder */}
                 <div className="w-full h-40 relative overflow-hidden">
                   <img
-                    src={sub.image} // <-- IMPORTANT: Use the data property as the source
+                    src={sub.image} 
                     alt={sub.name}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/50 z-0"></div>
+                  <div className="absolute inset-0 bg-black/60 z-0"></div>
                 </div>
                 <div className="absolute inset-0  bg-opacity-60 flex items-center p-4 transition duration-300 group-hover:bg-opacity-40">
-                  <p className="text-lg font-semibold text-white">{sub.name}</p>
+                  <p className="text-[18px] font-medium font-rale  text-slate-200">{sub.name}</p>
                 </div>
               </div>
             ))}
