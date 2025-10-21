@@ -45,7 +45,7 @@ const Header = () => {
       </div>
 
       {/* Bottom element */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute bottom-8 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <SwipeToSwitch />
       </div>
     </div>
