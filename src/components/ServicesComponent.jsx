@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 import Mapimg from "../assets/mapimg.jpg";
+import pic1 from "../assets/pic1.jpg";
+import pic2 from "../assets/pic2.jpg";
+import pic3 from "../assets/pic3.jpg";
+import pic4 from "../assets/pic4.jpg";
+
+
 // --- Data Structure for Services ---
 const servicesData = [
   {
@@ -9,8 +15,8 @@ const servicesData = [
       "Lorem ipsum dolor sit amet consectetur. Eu amet posuere consequat donec suspendisse lorem enim. Elit viverra nisl non nisl eleifend. Cursus erat mattis fames et mollis risus at.",
     subServices: [
       { name: "POS Softwares & Service", image: Mapimg },
-      { name: "Design & Development", image: Mapimg },
-      { name: "CCTV & Networking", image: Mapimg },
+      { name: "Design & Development", image: pic1 },
+      { name: "CCTV & Networking", image: pic2 },
     ],
   },
   {
@@ -19,9 +25,9 @@ const servicesData = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Eu amet posuere consequat donec suspendisse lorem enim. Elit viverra nisl non nisl eleifend. Cursus erat mattis fames et mollis risus at.",
     subServices: [
-      { name: "Web Hosting & Domain", image: Mapimg },
+      { name: "Web Hosting & Domain", image: pic3 },
       { name: "Custom Software", image: Mapimg },
-      { name: "Cloud Solutions", image: Mapimg },
+      { name: "Cloud Solutions", image: pic4 },
     ],
   },
   {
@@ -30,8 +36,8 @@ const servicesData = [
     description: "Details about our project process and methodology.",
     subServices: [
       { name: "Web Hosting & Domain", image: Mapimg },
-      { name: "Custom Software", image: Mapimg },
-      { name: "Cloud Solutions", image: Mapimg },
+      { name: "Custom Software", image: pic4 },
+      { name: "Cloud Solutions", image: pic3 },
     ],
   },
   {
@@ -40,9 +46,9 @@ const servicesData = [
     description:
       "Our full-cycle service for developing iOS and Android applications.",
     subServices: [
-      { name: "Web Hosting & Domain", image: Mapimg },
-      { name: "Custom Software", image: Mapimg },
-      { name: "Cloud Solutions", image: Mapimg },
+      { name: "Web Hosting & Domain", image: pic1 },
+      { name: "Custom Software", image: pic2 },
+      { name: "Cloud Solutions", image: pic4 },
     ],
   },
 ];
@@ -121,14 +127,14 @@ const ServiceItem = ({ service, isActive, onClick }) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-6">
             <span
-              className={`text-[28px] font-rale font-normal ${
+              className={`text-[22px] md:text-[28px] font-rale font-normal ${
                 isActive ? "text-[#FFFFFF]" : "text-[#FFFFFF]"
               }`}
             >
               {service.id.toString().padStart(2, "0")}
             </span>
             <h3
-              className="text-[28px] font-rale font-normal bg-clip-text text-transparent transition duration-300"
+              className="text-[22px] md:text-[28px] font-rale font-normal bg-clip-text text-transparent transition duration-300"
               style={{
                 backgroundImage:
                   "linear-gradient(96.45deg, #FFFFFF 10.29%, rgba(255, 255, 255, 0) 145.86%)",
@@ -159,7 +165,7 @@ const ServiceItem = ({ service, isActive, onClick }) => {
         <div className="pl-16 pt-4 pb-8 space-y-6 transition-all duration-500 ease-in-out">
           {/* Description Text */}
           <div className="border-l-4 border-purple-600 pl-6">
-            <p className="text-lg text-gray-400 max-w-3xl">
+            <p className="text-sm md:text-lg text-gray-400 max-w-3xl">
               {service.description}
             </p>
           </div>
@@ -180,7 +186,7 @@ const ServiceItem = ({ service, isActive, onClick }) => {
                   />
                   <div className="absolute inset-0 bg-black/50 z-0"></div>
                 </div>
-                <div className="absolute inset-0  bg-opacity-60 flex items-end p-4 transition duration-300 group-hover:bg-opacity-40">
+                <div className="absolute inset-0  bg-opacity-60 flex items-center p-4 transition duration-300 group-hover:bg-opacity-40">
                   <p className="text-lg font-semibold text-white">{sub.name}</p>
                 </div>
               </div>
@@ -206,10 +212,10 @@ const ServicesComponent = () => {
     <div className=" text-white min-h-screen py-20 px-4 sm:px-6 lg:px-8 font-sans">
       <div className="max-w-4xl mx-auto">
         {/* Header Section */}
-        <p className="text-center text-[#9C9C9C] uppercase tracking-widest text-[18px] font-radio mb-2">
+        <p className="text-center text-[#9C9C9C] uppercase tracking-widest text-[14px] md:text-[18px] font-radio mb-2">
           Our Services
         </p>
-        <h2 className="text-center text-4xl sm:text-[28px] font-normal mb-12 leading-tight font-radio">
+        <h2 className="text-center text-[22px] sm:text-[28px] font-normal mb-12 leading-tight font-radio">
           Your Aspiration, Our Expertise: Tailored Services for Unmatched
           Excellence.
         </h2>

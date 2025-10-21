@@ -162,7 +162,26 @@ const Futures = () => {
                 <h3 className="text-[16px] md:text-lg font-medium text-gray-200 font-radio ">
                   {item.feature}
                 </h3>
-                <p className="text-gray-400 leading-relaxed text-[16px] font-pop">{item.subtitle}</p>
+             <p
+  className="
+    w-full
+    text-gray-300
+    font-pop
+    text-[16px] md:text-[17px]
+    leading-relaxed
+    rounded-xl
+    p-6 md:p-8
+    shadow-lg
+    break-words
+    whitespace-normal
+  "
+>
+  {item.subtitle}
+</p>
+
+
+
+
                 <hr className="h-[2px] border-0 bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]" />
 
                 <div className="flex justify-center">
