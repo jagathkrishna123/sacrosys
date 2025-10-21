@@ -8,7 +8,7 @@ const Header = () => {
     bg-[url('/src/assets/heroImage.png')] 
     bg-no-repeat bg-cover bg-center 
     sm:bg-[center_top] md:bg-center 
-    min-h-[100vh]">
+    min-h-[80vh] md:min-h-[100vh]">
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
@@ -25,7 +25,7 @@ const Header = () => {
               </span>{" "}
               CCTV And
             </p>
-            <p className="text-[#08F7C3] max-w-sm">Network Solutions Tailored for</p>
+            <p className="text-[#08F7C3] max-w-sm">Network Solutions Tailored foor</p>
             <p className="bg-gradient-to-r from-white to-[#08F7c3] bg-clip-text text-transparent">
               Every Organization
             </p>
