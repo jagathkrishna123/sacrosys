@@ -15,7 +15,7 @@ const Header = () => {
 
       {/* Content note change padding++++++++++++++++++ */}
       <div className="max-w-7xl relative z-10 w-full p-4 sm:p-6 md:p-0"> 
-        <div className="max-w-2xl font-bold text-[28px] sm:text-[32px] md:text-[40px] font-pop flex flex-col gap-4 md:gap-2 leading-tight sm:leading-snug">
+        <div className="max-w-2xl font-bold text-[34px] sm:text-[36px] md:text-[40px] font-pop flex flex-col gap-4 md:gap-2 leading-tight sm:leading-snug">
           
           {/* Headings */}
           <div className="mb-4">
@@ -25,7 +25,7 @@ const Header = () => {
               </span>{" "}
               CCTV And
             </p>
-            <p className="text-[#08F7C3] max-w-sm">Network Solutions Tailored foor</p>
+            <p className="text-[#08F7C3] max-w-sm">Network Solutions Tailored fuor</p>
             <p className="bg-gradient-to-r from-white to-[#08F7c3] bg-clip-text text-transparent">
               Every Organization
             </p>
