@@ -8,7 +8,7 @@ const Header = () => {
     bg-[url('/src/assets/heroImage.png')] 
     bg-no-repeat bg-cover bg-center 
     sm:bg-[center_top] md:bg-center 
-    min-h-[80vh] md:min-h-[100vh]">
+    min-h-[90vh] md:min-h-[100vh]">
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
