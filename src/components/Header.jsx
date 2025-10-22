@@ -47,7 +47,7 @@ const Header = () => {
             </p> */}
           </div>
 
-          {/* Subtitle */}
+          {/* Subtitle..................... */}
           <div>
             <p className="text-[14px] sm:text-[15px] md:text-[17px] font-extralight font-pop leading-relaxed text-gray-100">
               The top CCTV and networking solutions in Dubai are essential for any
@@ -55,12 +55,12 @@ const Header = () => {
             </p>
           </div>
 
-          {/* Gradient divider */}
+          {/* Gradient............ */}
           <hr className="h-[2px] border-0 bg-gradient-to-r from-[#08F7c3] to-[#05915B] my-4 w-full" />
         </div>
       </div>
 
-      {/* Bottom element */}
+      {/* Bottom....... */}
       <div className="absolute bottom-8 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <SwipeToSwitch />
       </div>
