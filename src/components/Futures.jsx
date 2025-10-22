@@ -1,91 +1,4 @@
-// import React from 'react'
-// import { CAMERAFEATURESDATA, FUTURESDATA } from '../Constants/data.js'
-// import star from "../assets/star.svg"
-// const Futures = () => {
-//   return (
-//     <div className='max-w-5xl w-full  mx-auto pt-16 '>
-//         <h2
-//   className="
-//     font-radio
-//     bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]
-//     bg-clip-text text-transparent
-//     text-[40px]
-//     font-normal
-//     leading-none
-//     tracking-normal
-//     text-center
-//   "
-// >
-//   The Wide Range Futures
-// </h2>
 
-//     <div className="grid grid-cols-3 gap-4 mt-10 font-pop">
-//   {FUTURESDATA.map((item, index) => (
-//     <div
-//       key={index}
-//       className="bg-[#222222] flex flex-col items-center text-center p-6 rounded-lg gap-3"
-//     >
-//       <img src={item.image} alt={item.title} className="w-14 mb-3" />
-
-//       <div>
-//         <p className="text-white text-lg font-medium">{item.title}</p>
-//         <p className="text-[#676767] text-sm mt-1">{item.subtitle}</p>
-//         <button className="mt-3 bg-[#00AAB5] text-[11px] text-white px-2 py-1 rounded-full  hover:underline">
-//           Know more
-//         </button>
-//       </div>
-//     </div>
-//   ))}
-// </div>
-// <div className="grid grid-cols-1 mt-16 gap-16">
-//   {CAMERAFEATURESDATA.map((item, index) => (
-//     <div
-//       key={index}
-//       className={`flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto gap-10 ${
-//         index % 2 !== 0 ? "md:flex-row-reverse" : ""
-//       }`}
-//     >
-//       {/* Image */}
-//       <div className="flex-shrink-0">
-//         <img
-//           src={item.image}
-//           alt=""
-//           className="w-[350px] h-[350px] object-cover rounded-lg shadow-lg"
-//         />
-//       </div>
-
-//       {/* Content */}
-//       <div className="flex flex-col gap-4 text-center md:text-left max-w-md">
-//         <h2
-//           className="text-[28px] font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] bg-clip-text text-transparent"
-//           bg-clip-text text-transparent"
-//         >
-//           {item.title}
-//         </h2>
-//         <h3 className="text-lg font-semibold text-gray-200">{item.feature}</h3>
-//         <p className="text-gray-400 leading-relaxed">{item.subtitle}</p>
-//         <div className="flex justify-center md:justify-start">
-//           <img src={star} alt="rating" className="w-[90px]" />
-//         </div>
-//         <button
-//           className="px-5 py-2 mt-2 rounded-full border border-cyan-400 text-cyan-300 hover:bg-cyan-400
-//           hover:text-black transition duration-300 mx-auto md:mx-0"
-//         >
-//           Learn more
-//         </button>
-//       </div>
-//     </div>
-//   ))}
-// </div>
-
-// <h2 className="text-4xl font-bold text-white handwrite">
-//   CompanyLogo
-// </h2>
-//     </div>
-//   )
-// }
-
-// export default Futures
 
 import React from "react";
 import { CAMERAFEATURESDATA, FUTURESDATA } from "../Constants/data.js";
@@ -95,22 +8,8 @@ import Banner from "./Banner.jsx";
 const Futures = () => {
   return (
     <div className="w-full  pt-16">
-      {/* Main Container */}
       <div className="max-w-6xl w-full mx-auto px-6">
-        {/* Section Heading */}
-        <h2
-          className="
-            font-radio 
-            bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] 
-            bg-clip-text text-transparent
-            text-[26px]
-            md:text-[40px] 
-            font-normal 
-            leading-none 
-            tracking-normal 
-            text-center
-          "
-        >
+        <h2 className=" font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] bg-clip-text text-transparent text-[26px] md:text-[40px] font-normal leading-none tracking-normal  text-center">
           The Wide Range Futures
         </h2>
 
@@ -123,8 +22,12 @@ const Futures = () => {
             >
               <img src={item.image} alt={item.title} className="w-14 mb-3" />
               <div>
-                <p className="text-white text-[16px] md:text-[20px] md:text-lg font-pop">{item.title}</p>
-                <p className="text-[#676767] font-normal text-[14px] md:text-[16px] mt-1">{item.subtitle}</p>
+                <p className="text-white text-[16px] md:text-[20px] md:text-lg font-pop">
+                  {item.title}
+                </p>
+                <p className="text-[#676767] font-normal text-[14px] md:text-[16px] mt-1">
+                  {item.subtitle}
+                </p>
                 <button className="mt-3 bg-[#00AAB5] text-[11px] text-white px-3 py-1 rounded-full hover:bg-[#00c2d5] transition">
                   Know more
                 </button>
@@ -142,7 +45,7 @@ const Futures = () => {
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               }`}
             >
-              {/* Image */}
+              {/* Image................................................ */}
               <div className="flex-shrink-0">
                 <img
                   src={item.image}
@@ -151,82 +54,38 @@ const Futures = () => {
                 />
               </div>
 
-              {/* Content */}
+              {/* Content.................................... */}
               <div className="flex flex-col gap-4 text-center md:text-left max-w-lg">
-                <h2
-                  className="text-[26px] md:text-[32px] text-center font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]
-                  bg-clip-text text-transparent"
-                >
-                  {item.title}
-                </h2>
-                {/* <h3 className="text-[16px] md:text-lg font-medium text-gray-200 font-radio">
-                  {item.feature}
-                </h3>
-             <p
-  className="
-    w-full
-    text-gray-300
-    font-pop
-    text-[16px] md:text-[17px]
-    leading-relaxed
-    rounded-xl
-    p-6 md:p-8
-    shadow-lg
-    break-words
-    whitespace-normal
-  "
->
-  {item.subtitle}
-</p> */}
-<div
-  className="
-    w-full
-    text-gray-300
-    font-pop
-    rounded-xl
-    p-6 md:p-8
-    break-words
-    whitespace-normal
-  "
->
-  {/* Feature first */}
-  <div className="text-[#08F7C3] font-normal font-radio text-[16px] md:text-[24px] mb-3">
-    {item.feature}
-  </div>
+                <h2 className="text-[26px] md:text-[32px] text-center font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] bg-clip-text text-transparent">
+                {item.title}
+              </h2>
 
-  {/* Subtitle below */}
-  <div className="text-[16px] md:text-[17px] leading-relaxed font-pop text-gray-300">
-    {item.subtitle}
-  </div>
-</div>
+                <div className="w-full text-gray-300 font-pop rounded-xl p-6 md:p-8 break-words whitespace-normal">
+                  {/* Feature.....................................*/}
+                    <div className="text-[#08F7C3] font-normal font-radio text-[16px] md:text-[24px] mb-3">
+                      {item.feature}
+                    </div>
 
-
-
+                    {/* Subtitle......... */}
+                    <div className="text-[16px] md:text-[17px] leading-relaxed font-pop text-gray-300">
+                      {item.subtitle}
+                    </div>
+                </div>
 
                 <hr className="h-[2px] border-0 bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF]" />
 
                 <div className="flex justify-center">
                   <img src={star} alt="rating" className="w-[90px]" />
                 </div>
-                  <div className="flex justify-center">
-  <button
-    className="relative px-10 py-2 mt-2 rounded-full text-cyan-300 font-radio transition duration-300 max-w-fit border-2 border-transparent flex items-center justify-center gap-4"
-    style={{
-      background: `
-        linear-gradient(#120E23) padding-box,
-        linear-gradient(to right, #FF2DF7, #5200FF, #00F0FF) border-box
-      `,
-    }}
-  >
-    Learn more
-    <img
-      src={Arrowright}
-      alt=""
-      className="w-[22px] items-center"
-    />
-  </button>
-</div>
-
+                <div className="flex justify-center">
+                  <button className="relative px-10 py-2 mt-2 rounded-full text-cyan-300 font-radio transition duration-300 max-w-fit border-2 border-transparent flex items-center justify-center gap-4"
+                      style={{
+                        background: `linear-gradient(#120E23) padding-box,
+                                    linear-gradient(to right, #FF2DF7, #5200FF, #00F0FF) border-box`,}}>
+                      Learn more
+                      <img src={Arrowright} alt="" className="w-[22px] items-center"/>
+                  </button>
+                </div>
               </div>
             </div>
           ))}

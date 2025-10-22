@@ -3,25 +3,42 @@ import SwipeToSwitch from './SwipeToSwitch'
 
 const Header = () => {
   return (
-    <div className="relative flex flex-col items-start justify-center 
-    px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 text-white 
-    bg-[url('/src/assets/heroImage.png')] 
-    bg-no-repeat bg-cover bg-center 
-    sm:bg-[center_top] md:bg-center 
-    min-h-[90vh] md:min-h-[100vh]">
+    // <div className="relative flex flex-col items-start justify-center 
+    // px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 text-white 
+    // bg-[url('/src/assets/heroImage.png')] 
+    // bg-no-repeat bg-cover bg-center 
+    // sm:bg-[center_top] md:bg-center 
+    // min-h-[90vh] md:min-h-[100vh]">
+//     <div className="
+//   relative flex flex-col items-start justify-center
+//   px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32
+//   text-white
+//   bg-[url('/src/assets/heroImage.png')]
+//   bg-no-repeat bg-cover
+//   bg-right sm:bg-center md:bg-center
+//   min-h-[90vh] md:min-h-[100vh]
+// ">
+<div className="
+  relative flex flex-col items-start justify-center
+  px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32
+  text-white
+  bg-[url('/src/assets/heroImage.png')]
+  bg-no-repeat bg-cover
+  bg-[right_50%] sm:bg-center md:bg-center
+  min-h-[90vh] md:min-h-[100vh]">
 
-      {/* Overlay */}
+
       <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-      {/* Content note change padding++++++++++++++++++ */}
-      <div className="max-w-7xl relative z-10 w-full p-4 sm:p-6 md:p-0"> 
+      {/* Content note change padding++++++++++++++++++...... */}
+      <div className="max-w-7xl mx-auto relative z-10 w-full p-4 sm:p-6 md:p-0"> 
         <div className="max-w-2xl font-bold text-[36px] md:text-[40px] font-pop flex flex-col gap-4 md:gap-2 leading-tight sm:leading-snug">
           
           {/* Headings */}
           <div className="mb-4 leading-snug">
             <p className="text-[#08F7C3]">
               <span className="bg-gradient-to-r from-[#F9F9F9] to-[#05915B] bg-clip-text text-transparent">
-                Comprehensive
+                Comprehensivee
               </span>{" "}
             </p>
             <p className="text-[#08F7C3] max-w-sm">CCTV And Network Solutions Tailored fuor Every Organization</p>

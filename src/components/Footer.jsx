@@ -21,7 +21,7 @@ const linkSections = [
 
 const Footer = () => {
     return (
-        <div className="px-6 md:px-16 lg:px-24 xl:px-32">
+        <div className="px-6 md:px-16 lg:px-24 xl:px-32 mt-4">
             <div className="max-w-6xl mx-auto py-10 border-b border-gray-500/30 text-gray-500">
                 <div className="flex flex-wrap justify-between gap-10">
                     {linkSections.map((section, index) => (
@@ -29,7 +29,7 @@ const Footer = () => {
                             <h3 className="font-normal text-base font-pop text-gray-300 mb-4">{section.title}</h3>
                             <ul className="text-sm space-y-2">
                                 {section.links.map((link, i) => (
-                                    <li key={i}>
+                                    <li key={i} className=''>
                                         <a href="#" className="hover:underline transition text-[14px] font-rale text-[#9C9C9C]">{link}</a>
                                     </li>
                                 ))}

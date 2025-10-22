@@ -3,7 +3,6 @@ import { ALLCAMERAS } from "../Constants/data";
 import carticon from "../assets/carticon.svg";
 import staricon from "../assets/staricon.svg";
 
-
 const ProductList = () => {
   return (
     <div className="max-w-6xl mx-auto w-full flex flex-col gap-3 p-2 mt-10">
@@ -16,10 +15,7 @@ const ProductList = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {ALLCAMERAS.map((item, index) => (
-          <div
-            key={index}
-            className="bg-black flex flex-col items-center justify-center rounded-lg w-fit p-4"
-          >
+          <div key={index} className="bg-black flex flex-col items-center justify-center rounded-lg w-fit p-4">
             <div className="flex-shrink-0 relative">
               <img
                 src={item.image}
@@ -44,12 +40,15 @@ const ProductList = () => {
                 More details
               </p>
               <div className="flex flex-row justify-between items-center">
-  <button className="w-[120px] h-[28px] md:w-[148px] md:h-[32px] bg-[#00AAB5] text-[14px] font-radio md:text-[16px] text-white rounded-full hover:bg-[#00c2d5] transition flex items-center justify-center">
-    Buy
-  </button>
-  <img src={carticon} alt="" className="w-[24px] h-[24px] md:w-[30px] md:h-[30px]" />
-</div>
-
+                <button className="w-[100px] h-[22px] sm:w-[120px] sm:h-[28px] md:w-[148px] md:h-[32px] bg-[#00AAB5] text-[14px] font-radio md:text-[16px] text-white rounded-full hover:bg-[#00c2d5] transition flex items-center justify-center">
+                  Buy
+                </button>
+                <img
+                  src={carticon}
+                  alt=""
+                  className="w-[24px] h-[24px] md:w-[30px] md:h-[30px]"
+                />
+              </div>
             </div>
           </div>
         ))}

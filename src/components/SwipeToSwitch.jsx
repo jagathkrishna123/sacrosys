@@ -1,7 +1,7 @@
 
 
 import React, { useState } from "react";
-import { MdOutlineKeyboardDoubleArrowLeft, MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
+import Arrowleft from "../assets/arrowlft.svg"
 
 const SwipeToSwitch = () => {
   const [swiped, setSwiped] = useState(false);
@@ -31,14 +31,21 @@ const SwipeToSwitch = () => {
 
       {/* Background label when not swiped */}
       {!swiped ? (
-        <p className="absolute left-1/4 sm:left-1/3 md:left-1/2 -translate-x-1/2 text-emerald-800 font-semibold pointer-events-none">
-    <MdOutlineKeyboardDoubleArrowLeft className="text-xl sm:text-2xl" />
-  </p>
-      ):(
-        <p className="absolute right-6 sm:right-10 md:left-1/3 -translate-x-1/2 text-emerald-800 font-semibold pointer-events-none">
-    <MdOutlineKeyboardDoubleArrowRight className="text-xl sm:text-2xl" />
-  </p>
-      )}
+  <img
+    src={Arrowleft}
+    alt=""
+    className="w-8 absolute left-1/4 sm:left-1/3 md:left-1/4 -translate-x-1/2 z-20 pointer-events-none"
+  />
+) : (
+  <img
+    src={Arrowleft}
+    alt=""
+    className="w-8 rotate-180 absolute right-6 sm:right-10 md:right-12 z-20 pointer-events-none"
+  />
+)}
+
+
+
     </div>
    </div>
   );
