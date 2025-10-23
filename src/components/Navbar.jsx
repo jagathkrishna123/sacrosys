@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LogoTitle from './LogoTitle';
+import { easeOut, motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,12 @@ const Navbar = () => {
     <>
       {/* Navbar Container */}
       <div className="fixed top-6 left-0 right-0 z-50">
-        {/* ✅ Added consistent wrapper with same max-width and padding */}
-        <div className="flex flex-row items-center justify-between max-w-7xl mx-auto w-full px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32">
+        {/*  Added consistent wrapper with same max-width and padding */}
+        <motion.div
+          initial={{opacity: 0, y: -50}}
+          animate={{opacity:1, y:0}}
+          transition={{duration:0.6, ease: easeOut}}
+         className="flex flex-row items-center justify-between max-w-[1380px] mx-auto w-full px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32">
 
           {/* Logo */}
           <a href="">
@@ -66,7 +71,7 @@ const Navbar = () => {
               </a>
             </div>
           </header>
-        </div>
+        </motion.div>
       </div>
 
       {/* .................. MOBILE SIDEBAR .................... */}

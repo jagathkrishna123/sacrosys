@@ -1,5 +1,6 @@
 import React from 'react'
 import WritingLogo from './WritingLogo';
+import { motion } from 'framer-motion';
 
 const linkSections = [
     {
@@ -26,7 +27,11 @@ const Footer = () => {
             <div className="max-w-6xl mx-auto py-10 border-b border-gray-500/30 text-gray-500">
                 <div className="flex flex-wrap justify-between gap-10">
                     {linkSections.map((section, index) => (
-                        <div key={index} className="flex-1 min-w-[150px]">
+                        <motion.div
+                            initial={{opacity: 0}}
+                            whileInView={{opacity:1}}
+                            transition={{duration: 0.5, delay: 0.4}}
+                         key={index} className="flex-1 min-w-[150px]">
                             <h3 className="font-normal text-base font-pop text-gray-300 mb-4">{section.title}</h3>
                             <ul className="text-sm space-y-2">
                                 {section.links.map((link, i) => (
@@ -35,11 +40,11 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
-            <p className="text-center font-pop text-sm md:text-[15px] text-gray-500/80 mt-6 mb-9">
+            <p className="text-center font-pop text-[15px] md:text-[18px] text-gray-500/80 mt-6 mb-9">
                 Copyright © 2025-26 Sacrosys Technologies | All Rights Reserved.
             </p>
             <WritingLogo/>

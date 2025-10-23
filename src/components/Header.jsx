@@ -14,8 +14,8 @@ const Header = () => {
 
       <div className="absolute inset-0 bg-black/50 z-0"></div>
 
-      {/* ✅ Added same consistent wrapper for alignment */}
-      <div className="max-w-7xl mx-auto w-full px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 relative z-10">
+      {/* .......................... */}
+      <div className="max-w-[1380px] mx-auto w-full px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 relative z-10">
         <div className="max-w-2xl font-bold text-[36px] md:text-[40px] font-pop flex flex-col gap-4 md:gap-2 leading-tight sm:leading-snug">
 
           {/* Headings */}
