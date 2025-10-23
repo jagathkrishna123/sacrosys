@@ -1,4 +1,5 @@
 import React from 'react'
+import WritingLogo from './WritingLogo';
 
 const linkSections = [
     {
@@ -41,6 +42,7 @@ const Footer = () => {
             <p className="text-center font-pop text-sm md:text-[15px] text-gray-500/80 mt-6 mb-9">
                 Copyright © 2025-26 Sacrosys Technologies | All Rights Reserved.
             </p>
+            <WritingLogo/>
         </div>
     )
 }
