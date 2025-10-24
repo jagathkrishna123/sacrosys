@@ -2,20 +2,33 @@ import React from "react";
 import { ALLCAMERAS } from "../Constants/data";
 import carticon from "../assets/carticon.svg";
 import staricon from "../assets/staricon.svg";
+import { motion } from "framer-motion";
 
 const ProductList = () => {
   return (
     <div className="max-w-6xl mx-auto w-full flex flex-col gap-3 p-2 mt-10">
-      <h2 className="font-radio text-[30px] md:text-[40px] text-center bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] bg-clip-text text-transparent">
+      <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+       className="font-radio text-[30px] md:text-[40px] text-center bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] bg-clip-text text-transparent">
         Explore Products
-      </h2>
+      </motion.h2>
       <p className="text-[16px] font-pop text-[#E6CCFF] text-end pr-4 md:pr-10">
         Latest cameras
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        transition={{staggerChildren: 0.2}}
+       className="grid grid-cols-2 md:grid-cols-4 gap-3">
         {ALLCAMERAS.map((item, index) => (
-          <div key={index} className="bg-black flex flex-col items-center justify-center rounded-lg w-fit p-4">
+          <motion.div
+            initial={{opacity:0, y: 30}}
+            whileInView={{opacity:1, y:0}}
+            transition={{duration:0.5, delay: index * 0.2}}
+           key={index} className="bg-black flex flex-col items-center justify-center rounded-lg w-fit p-4">
             <div className="flex-shrink-0 relative">
               <img
                 src={item.image}
@@ -50,9 +63,9 @@ const ProductList = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -97,10 +97,11 @@ const Futures = () => {
             >
               {/* Image................................................ */}
               <motion.div
-                initial={{x: -50, opacity: 0}}
-                whileInView={{x: 0, opacity: 1}}
-                transition={{delay: 1.1, duration: 0.6}}
-               className="flex-shrink-0">
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ delay: 1.1, duration: 0.6 }}
+                className="flex-shrink-0"
+              >
                 <img
                   src={item.image}
                   alt=""
@@ -110,13 +111,19 @@ const Futures = () => {
 
               {/* Content.................................... */}
               <motion.div
-                initial={{x: 50, opacity: 0}}
-                whileInView={{x: 0, opacity: 1}}
-                transition={{delay: 1.2, duration: 0.6}}
-               className="flex flex-col gap-4 text-center md:text-left max-w-lg">
-                <h2 className="text-[26px] md:text-[32px] text-center font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] bg-clip-text text-transparent">
+                initial={{ x: 50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ delay: 1.2, duration: 0.6 }}
+                className="flex flex-col gap-4 text-center md:text-left max-w-lg"
+              >
+                <motion.h2
+                  initial={{ y: -20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="text-[26px] md:text-[32px] text-center font-radio bg-gradient-to-r from-[#FF2DF7] via-[#5200FF] to-[#00F0FF] bg-clip-text text-transparent"
+                >
                   {item.title}
-                </h2>
+                </motion.h2>
 
                 <div className="w-full text-gray-300 font-pop rounded-xl p-6 md:p-8 break-words whitespace-normal">
                   {/* Feature.....................................*/}
